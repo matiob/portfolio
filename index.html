@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mateo Buraschi's Portfolio</title>
+    <meta
+      name="description"
+      content="Mateo Buraschi Pire FullStack Developer: Node | Express | TypeScript | React | Next"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquerys.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="desktop-nav">
+        <div class="logo">Mateo Buraschi</div>
+        <div>
+          <ul class="nav-links">
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+            <li>
+              <a href="#proyects">Proyects</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburguer-nav">
+        <div class="logo">Mateo Buraschi</div>
+        <div class="hamburguer-menu">
+            <div class="hamburguer-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li>
+                      <a href="#about" onclick="toggleMenu()">About</a>
+                    </li>
+                    <li>
+                      <a href="#experience" onclick="toggleMenu()">Experience</a>
+                    </li>
+                    <li>
+                      <a href="#proyects" onclick="toggleMenu()">Proyects</a>
+                    </li>
+                    <li>
+                      <a href="#contact" onclick="toggleMenu()">Contact</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section id="profile">
+            <article class="pic-container">
+                <img src="./assets/profile.jpg" alt="Mateo Profile picture"
+                class="profile-pic">
+            </article>
+            <article class="profile-text">
+                <p class="text-p1">Hello I'm</p>
+                <h1 class="title">Mateo Buraschi</h1>
+                <p class="text-p2">FullStack Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                        Contact me
+                    </button>
+                    <button 
+                    class="btn btn-color-2" 
+                    onclick="window.open('./assets/curriculum.pdf')">
+                        Download CV
+                    </button>
+                </div>
+                <div class="social-container">
+                    <img 
+                    src="./assets/linkedin.png" alt="Linkedin logo" 
+                    class="icon" 
+                    onclick="location.href='https://www.linkedin.com/in/matiob/'">
+                    <img 
+                    src="./assets/github.png" alt="Github logo" class="icon" 
+                    onclick="location.href='https://github.com/matiob'">
+                </div>
+            </article>
+        </section>
+        <section id="about">
+            <article>
+                <p class="text-p1">Get to know more</p>
+                <h1 class="title">About Me</h1>
+            </article>
+            <article class="section-container">
+                <div class="pic-container">
+                    <img
+                      src="./assets/profile_2.JPG"
+                      alt="Mateo Profile picture"
+                      class="about-pic"
+                    />
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                          <img
+                            src="./assets/experience.png"
+                            alt="Experience icon"
+                            class="icon"
+                          />
+                          <h3>Experience</h3>
+                          <p>2+ years <br />FullStack Development</p>
+                        </div>
+                        <div class="details-container">
+                          <img
+                            src="./assets/education.png"
+                            alt="Education icon"
+                            class="icon"
+                          />
+                          <h3>Education</h3>
+                          <p>Programming Degree
+                            <br/>
+                            Data Science Diploma</p>
+                        </div>
+                      </div>
+                      <div class="text-container">
+                        <p>
+                            As a teacher, I coordinate and lead teams using SCRUM methodologies. As a researcher, I analyze and construct solutions to market needs and problems. As a programmer, I enhance functionalities and improve user experiences.
+                            I consider myself a proactive person who easily adapts to changes who likes to challenge himself and be constantly learning. I am passionate about explaining how applications work, solving errors or problems, but above all learning along the way.
+                        </p>
+                      </div>
+                </div>
+            </article>
+            <img
+              src="./assets/arrow.png"
+              alt="Arrow icon"
+              class="icon arrow"
+              onclick="location.href='./#experience'"
+            />
+        </section>
+        <section id="experience">
+            <article>
+                <p class="text-p1">Explore My</p>
+                <h2 class="title">Experience</h2>
+            </article>
+            <article class="experience-details-container">
+                <div class="about-containers">
+                  <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="tec-container">
+                      <div class="tec">
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>TypeScript</h3>
+                          <p>Experienced</p>
+                        </div>
+                      </div>
+                      <div  class="tec">
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>JavaScript</h3>
+                          <p>Experienced</p>
+                        </div>
+                      </div>
+                      <div  class="tec">
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Angular</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </div>
+                      <div class="tec">
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>React</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </div>
+                      <div class="tec">
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Bootstrap</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </div>
+                      <div class="tec">
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Material UI</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="tec-container">
+                      <div class="tec">
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>SQL</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </div>
+                      <div class="tec">
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Node JS</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </div>
+                      <div class="tec">
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Express JS</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </div>
+                      <div class="tec">
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Java</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </div>
+                      <div class="tec">
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>SpringBoot</h3>
+                          <p>Basic</p>
+                        </div>
+                      </div>
+                      <div class="tec">
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Python</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </div>
+                        
+                <!--       <div class="tec">
+                        <img
+                          src="./assets/checkmark.png"
+                          alt="Experience icon"
+                          class="icon"
+                        />
+                        <div>
+                          <h3>Git</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </article>
+            <img
+              src="./assets/arrow.png"
+              alt="Arrow icon"
+              class="icon arrow"
+              onclick="location.href='./#projects'"
+            />
+        </section>
+        <section id="projects">
+            <article>
+                <p class="text-p1">Browse My Recent</p>
+                <h2 class="title">Projects</h2>
+            </article>
+            <article class="experience-details-container">
+              <div class="about-containers">
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./assets/clubDelPlan.jpg"
+                      alt="Project 1"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Club del Plan</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/matiob/clubdelplan'"
+                    >
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/matiob/clubdelplan'"
+                    >
+                      Live Demo
+                    </button>
+                  </div>
+                </div>
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./assets/futurum.png"
+                      alt="Project 2"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Futurum</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/matiob/futurumCourses'"
+                    >
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/matiob/futurumCourses'"
+                    >
+                      Live Demo
+                    </button>
+                  </div>
+                </div>
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./assets/veterinary.png"
+                      alt="Project 3"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">My Vet</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/matiob/Vet'"
+                    >
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/matiob/Vet'"
+                    >
+                      Live Demo
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <img
+              src="./assets/arrow.png"
+              alt="Arrow icon"
+              class="icon arrow"
+              onclick="location.href='./#contact'"
+            />
+        </section>
+        <section id="contact">
+            <article>
+                <p class="text-p1">Get in Touch</p>
+                <h2 class="title">Contact Me</h2>
+            </article>
+            <article class="contact-info-upper-container">
+              <div class="contact-info-container">
+                <img
+                  src="./assets/email.png"
+                  alt="Email icon"
+                  class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:buraschi.mateo@gmail.com">buraschi.mateo@gmail.com</a></p>
+              </div>
+              <div class="contact-info-container">
+                <img
+                  src="./assets/linkedin.png"
+                  alt="LinkedIn icon"
+                  class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/matiob/">LinkedIn</a></p>
+              </div>
+            </article>
+          </section>
+    </main>
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Mateo Buraschi. All Rights Reserved.</p>
+      </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
